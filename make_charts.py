@@ -166,12 +166,32 @@ def chart_p6():
     style(ax); ax.set_yticklabels([v[0] for v in variants][::-1], fontsize=9)
     save("p6_variants.png", fig)
 
+def chart_p7():
+    d = pd.read_csv(ROOT / "quant-portfolio" / "out" / "site_chart_data.csv", parse_dates=["date"])
+    d = d.dropna(subset=["gross_equity"])
+    fig, (ax, ax2) = plt.subplots(2, 1, figsize=(6, 4.6), dpi=200,
+                                   gridspec_kw={"height_ratios": [2, 1]})
+    ax.plot(d["date"], d["gross_equity"], color=C["muted"], lw=1.1, label="gross", alpha=0.8)
+    ax.plot(d["date"], d["net_equity"], color=C["accent"], lw=1.6, label="net")
+    ax.set_yscale("log")
+    ax.legend(fontsize=9, frameon=False, loc="upper left")
+    ax.set_title("Flagship alpha pipeline, 120-ticker PIT universe 2008-2025, OOS net Sharpe 2.67",
+                 fontsize=10, pad=12, loc="left")
+    style(ax)
+    m = d.dropna(subset=["oos_ic"])
+    ax2.plot(m["date"], m["oos_ic"], color=C["accent2"], lw=1.0, alpha=0.9)
+    ax2.axhline(0, color=C["muted"], lw=1, alpha=0.5)
+    ax2.set_ylabel("OOS rank IC", fontsize=9)
+    style(ax2)
+    fig.autofmt_xdate(rotation=0)
+    save("p7_flagship.png", fig)
+
 def run_batch(palette, suffix):
     global SFX
     C.clear(); C.update(palette)
     SFX = suffix
     apply_rc(palette)   # set rcParams (text/axis colors) for this theme
-    for f in (chart_p1, chart_p2, chart_p3, chart_p4, chart_p5, chart_p6):
+    for f in (chart_p1, chart_p2, chart_p3, chart_p4, chart_p5, chart_p6, chart_p7):
         f()
         print(f"  [{palette is LIGHT and 'light' or 'dark'}] wrote", f.__name__ + suffix)
 

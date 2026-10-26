@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vedant Konde. Quantitative finance, built to be defended.</title>
-<meta name="description" content="Six walk-forward quant and strategy projects: ML factor backtesting, GARCH VaR, M&A screening, NLP event studies, and deep forecasting. Every number is out-of-sample and reproducible.">
+<meta name="description" content="Seven walk-forward quant and strategy projects, headlined by a hedge-fund-grade cross-sectional equity alpha pipeline: purged walk-forward, point-in-time universe, cost-aware backtest, and a leak guardrail that proves its own numbers. Every number is out-of-sample and reproducible.">
 <meta name="theme-color" content="#f5f5f7" id="themeColor">
 <meta property="og:title" content="Vedant Konde — Quantitative Finance Portfolio">
-<meta property="og:description" content="Six walk-forward quant and strategy projects, every number out-of-sample and reproducible.">
+<meta property="og:description" content="Seven walk-forward quant and strategy projects, headlined by a hedge-fund-grade cross-sectional equity alpha pipeline. Every number out-of-sample and reproducible.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a3132e'/%3E%3Ctext x='16' y='22' font-family='-apple-system,Helvetica,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EV.%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/styles.css">
@@ -56,24 +56,25 @@
   <section class="hero" id="work">
     <div class="hero-grid">
       <div class="hero-main">
-        <p class="hero-kicker">Amazon Risk, two years. Six projects. One standard.</p>
+        <p class="hero-kicker">Amazon Risk, two years. Seven projects. One standard.</p>
         <h1 class="hero-title">Built to be<br>defended in an interview.</h1>
         <p class="hero-lede">Every project below was trained only on data it was allowed to see, scored out-of-sample, and priced with real friction. Where a model lost, the loss is reported. That is the point of the work.</p>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-num" data-count="50">0</span><span class="stat-label">out-of-sample test cases</span></div>
-          <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">reproducible research pipelines</span></div>
+          <div class="stat"><span class="stat-num" data-count="96">0</span><span class="stat-label">out-of-sample test cases</span></div>
+          <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">reproducible research pipelines</span></div>
           <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">in-sample results reported</span></div>
         </div>
       </div>
       <aside class="hero-index" aria-label="Project index">
         <span class="hero-index-label">Index</span>
         <ol>
-          <li><a href="#work-0"><span class="ix-no">01</span><span class="ix-name">Walk-forward factor backtest</span><span class="ix-metric">Sharpe 1.34</span></a></li>
-          <li><a href="#work-1"><span class="ix-no">02</span><span class="ix-name">VaR desk</span><span class="ix-metric">Kupiec p 0.53</span></a></li>
-          <li><a href="#work-2"><span class="ix-no">03</span><span class="ix-name">M&amp;A screening</span><span class="ix-metric">+3.2% EPS</span></a></li>
-          <li><a href="#work-3"><span class="ix-no">04</span><span class="ix-name">Earnings calls as data</span><span class="ix-metric">&beta; 0.055</span></a></li>
-          <li><a href="#work-4"><span class="ix-no">05</span><span class="ix-name">DXY forecasting</span><span class="ix-metric">MAE 0.0099</span></a></li>
-          <li><a href="#work-5"><span class="ix-no">06</span><span class="ix-name">Capstone factor note</span><span class="ix-metric">MDD 11.4%</span></a></li>
+          <li><a href="#work-0"><span class="ix-no">01</span><span class="ix-name">Flagship: hedge-fund-grade alpha</span><span class="ix-metric">OOS IC 0.149</span></a></li>
+          <li><a href="#work-1"><span class="ix-no">02</span><span class="ix-name">Walk-forward factor backtest</span><span class="ix-metric">Sharpe 1.34</span></a></li>
+          <li><a href="#work-2"><span class="ix-no">03</span><span class="ix-name">VaR desk</span><span class="ix-metric">Kupiec p 0.53</span></a></li>
+          <li><a href="#work-3"><span class="ix-no">04</span><span class="ix-name">M&amp;A screening</span><span class="ix-metric">+3.2% EPS</span></a></li>
+          <li><a href="#work-4"><span class="ix-no">05</span><span class="ix-name">Earnings calls as data</span><span class="ix-metric">&beta; 0.055</span></a></li>
+          <li><a href="#work-5"><span class="ix-no">06</span><span class="ix-name">DXY forecasting</span><span class="ix-metric">MAE 0.0099</span></a></li>
+          <li><a href="#work-6"><span class="ix-no">07</span><span class="ix-name">Capstone factor note</span><span class="ix-metric">MDD 11.4%</span></a></li>
         </ol>
         <a class="btn-primary" data-magnetic href="#work-0">See the work</a>
       </aside>
@@ -132,18 +133,49 @@
 
   <section class="bento" aria-label="Projects">
 
-    <!-- P1 hero card -->
+    <!-- Flagship: hedge-fund-grade cross-sectional alpha pipeline -->
     <article class="card card-hero" id="work-0" data-reveal data-tilt data-tilt-max="3">
       <div class="card-text">
       <span class="card-no">01</span>
+      <span class="card-chip">Flagship</span>
+      <div class="card-head">
+        <h2 class="card-title">A hedge-fund-grade alpha pipeline, built to be attacked</h2>
+        <p class="card-usecase">Point-in-time universe, purged walk-forward, cost-aware backtest, and a leak guardrail that must catch a deliberately leaky strategy before it is reported.</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/quant-portfolio" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
+      </div>
+      <p class="card-stat"><span class="stat-big">0.149</span><span class="stat-caps">out-of-sample rank IC (IC IR 0.95) on a 120-ticker, 2008-2025 survivorship-aware universe; net Sharpe 2.67 at 5 bps round-trip. The deliberately leaky feature scores Spearman IC 1.000 and is caught, not reported.</span></p>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-0">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-0">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Build the research infrastructure a hedge fund would audit before trusting any backtest — point-in-time data, purged out-of-sample scoring, and honest cost and multiple-testing corrections — then prove it on a flagship cross-sectional signal.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">A seeded 120-ticker market with real listings, delistings, splits and dividends feeds a point-in-time store with a SHA-256 integrity manifest. Fifteen decision-time features (technical, fundamental, post-earnings) are scored by a purged anchored walk-forward — no time shuffles, no in-sample leakage — across a ridge/elastic-net baseline, LightGBM, and a naive momentum benchmark. Forecasts become a market- and sector-neutral long-short book, charged with commission, spread, square-root impact and borrow.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>Python, pandas, scikit-learn, LightGBM, matplotlib, pytest.</strong> 120-ticker panel, 2008-2025, 46 tests. One command reproduces every number.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">OOS rank IC 0.149 (IR 0.95), net Sharpe 2.67 vs gross 2.74. The elastic-net baseline beats the booster on raw IC (0.200 vs 0.149), and the deflated Sharpe over 24 trials is not significant — both results are printed in the research note, not deleted.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">This is the methodology every other project on this page runs through: the leak guardrail, the equal-weight 20bp backtest pin, the purged split, and the cost model are load-bearing tests, and the one command that reproduces them is in the README.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">Designing the validator before the signal. A pipeline that can catch its own leakage is worth more than one that happens to be correct.</span></div>
+      </div>
+      </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p7_flagship.png" alt="Net vs gross equity curve and out-of-sample rank IC over time" loading="lazy">
+        <img class="fig-dark" src="img/p7_flagship-dark.png" alt="Net vs gross equity curve and out-of-sample rank IC over time" loading="lazy">
+        <figcaption>Gross vs net equity and the out-of-sample rank-IC series. The cost drag is what separates the two curves; the guardrail result is in the note.</figcaption>
+      </figure>
+    </article>
+
+    <!-- P1 hero card -->
+    <article class="card card-hero" id="work-1" data-reveal data-tilt data-tilt-max="3">
+      <div class="card-text">
+      <span class="card-no">02</span>
       <div class="card-head">
         <h2 class="card-title">Walk-forward factor backtest</h2>
         <p class="card-usecase">Does a machine-learned equity signal survive real costs and honest scoring?</p>
         <a class="card-repo" href="https://github.com/Vedantk910/quant-ml-factor-backtest" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">1.34</span><span class="stat-caps">out-of-sample Sharpe, the linear baseline. Random forest and gradient boosting both lost to it on a 24-ticker panel once friction is priced in.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-0">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-0">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-1">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-1">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Find out whether a learned equity signal survives real costs and honest out-of-sample scoring, not just a good-looking in-sample fit.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">Ranked 24 US mega-caps by predicted one-month return, long the top 8, quarterly rebalance at 10 bps. Trained walk-forward, on data before each target year only, with a FRED macro overlay, and priced every trade.</span></div>
@@ -163,17 +195,17 @@
     </article>
 
     <!-- P2 wide card -->
-    <article class="card card-wide flip" id="work-1" data-reveal data-tilt data-tilt-max="2">
+    <article class="card card-wide flip" id="work-2" data-reveal data-tilt data-tilt-max="2">
       <div class="card-text">
-      <span class="card-no">02</span>
+      <span class="card-no">03</span>
       <div class="card-head">
         <h2 class="card-title">A VaR desk that admits its errors</h2>
         <p class="card-usecase">Can a one-day 99% Value-at-Risk actually hold up against ten years of daily equity data?</p>
         <a class="card-repo" href="https://github.com/Vedantk910/garch-var-desk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">0.994</span><span class="stat-caps">SPY GARCH persistence. The 99% VaR recorded 7 violations in 552 days (1.27% against a 1% target), and the Kupiec test failed to reject correct coverage at p = 0.53.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-1">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-1">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-2">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-2">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Build a Value-at-Risk desk whose coverage can be tested against a decade of daily returns, not just asserted on paper.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">GARCH(1,1)-t and EGARCH volatility forecasting on SPY, Kupiec and Christoffersen coverage backtests on the 99% VaR, then a 15% vol-target overlay against a static 50/50 benchmark.</span></div>
@@ -193,17 +225,17 @@
     </article>
 
     <!-- P3 square -->
-    <article class="card card-square" id="work-2" data-reveal data-tilt data-tilt-max="2">
+    <article class="card card-square" id="work-3" data-reveal data-tilt data-tilt-max="2">
       <div class="card-text">
-      <span class="card-no">03</span>
+      <span class="card-no">04</span>
       <div class="card-head">
         <h2 class="card-title">M&amp;A screening, told like a case file</h2>
         <p class="card-usecase">Which public acquisitions were actually accretive, and at what price?</p>
         <a class="card-repo" href="https://github.com/Vedantk910/ma-case-file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">+3.2%</span><span class="stat-caps">first-year EPS accretion at a 6x entry multiple with full synergy capture. Above roughly 9x, every deal in the set is dilutive in year one.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-2">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-2">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-3">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-3">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Screen real public acquisitions for first-year EPS accretion and find the entry price at which the maths stops working.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">Twelve e-commerce and logistics deals swept across entry-multiple and synergy-capture grids, a DCF discount-rate sensitivity band, and a roll-up IRR matrix.</span></div>
@@ -223,17 +255,17 @@
     </article>
 
     <!-- P5 square -->
-    <article class="card card-square flip" id="work-3" data-reveal data-tilt data-tilt-max="2">
+    <article class="card card-square flip" id="work-4" data-reveal data-tilt data-tilt-max="2">
       <div class="card-text">
-      <span class="card-no">04</span>
+      <span class="card-no">05</span>
       <div class="card-head">
         <h2 class="card-title">Earnings calls, read as data</h2>
         <p class="card-usecase">Does the language of an earnings release move the stock after the print?</p>
         <a class="card-repo" href="https://github.com/Vedantk910/earnings-call-nlp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">0.055</span><span class="stat-caps">abnormal return per dollar of earnings surprise, significant at the 5% level across 160 events. Tone, on its own, did not reach significance, and the paper says why.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-3">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-3">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-4">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-4">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Test whether the language of an earnings release moves the stock after the print, using a defensible event-study design rather than a vibes check.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">160 firm-quarter events across 10 firms: SEC EDGAR release text, deterministic tone and uncertainty scoring, market-model abnormal returns, then a Newey-West HAC regression with firm fixed effects.</span></div>
@@ -253,17 +285,17 @@
     </article>
 
     <!-- P4 wide -->
-    <article class="card card-wide" id="work-4" data-reveal data-tilt data-tilt-max="2">
+    <article class="card card-wide" id="work-5" data-reveal data-tilt data-tilt-max="2">
       <div class="card-text">
-      <span class="card-no">05</span>
+      <span class="card-no">06</span>
       <div class="card-head">
         <h2 class="card-title">Forecasting the dollar, honestly</h2>
         <p class="card-usecase">Where does a transformer actually beat the boring baselines?</p>
         <a class="card-repo" href="https://github.com/Vedantk910/patchtst-forecast" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">h=5 / h=10</span><span class="stat-caps">PatchTST wins the five-step horizon at 0.0099 MAE; classical LightGBM takes the ten-step. The crossover is where the model choice should change, and the ablation table marks it.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-4">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-4">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-5">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-5">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Find where a transformer actually beats the boring forecasting baselines, and mark the horizon where the answer flips.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">Monthly DXY returns with a walk-forward split at May 2024: a patched transformer trained with early stopping against ETS, recursive LightGBM, and the random walk, at horizons 5 and 10, with a PSI drift monitor wired in.</span></div>
@@ -283,9 +315,9 @@
     </article>
 
     <!-- P6 capstone -->
-    <article class="card card-wide flip" id="work-5" data-reveal data-tilt data-tilt-max="2">
+    <article class="card card-wide flip" id="work-6" data-reveal data-tilt data-tilt-max="2">
       <div class="card-text">
-      <span class="card-no">06</span>
+      <span class="card-no">07</span>
       <span class="card-chip">Capstone</span>
       <div class="card-head">
         <h2 class="card-title">The capstone: one factor, three layers</h2>
@@ -293,8 +325,8 @@
         <a class="card-repo" href="https://github.com/Vedantk910/alpha-report" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">16.3% &rarr; 11.4%</span><span class="stat-caps">max drawdown cut by the vol-regime de-lever, Sharpe up from 0.22 to 0.24. The earnings overlay from project 5 made it worse as a monthly filter, 0.22 to 0.21, and the note keeps that result in the text.</span></p>
-      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-5">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
-      <div class="card-fold" id="detail-5">
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-6">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-6">
       <div class="card-detail">
         <div class="field"><span class="field-k">Aim</span><span class="field-v">Tie the earlier projects into one defensible strategy: a momentum factor, a vol-regime de-lever, and an earnings overlay, priced end to end.</span></div>
         <div class="field"><span class="field-k">How I did it</span><span class="field-v">A 12/1 momentum factor on 24 mega-caps from 2019 to 2025, at 25 bps friction, with a VIX-regime exposure control and the project-5 surprise screen as an entry filter, written up in the style of a hedge-fund PMO note.</span></div>
@@ -328,7 +360,7 @@
       </div>
       <div class="method-cell" data-reveal>
         <h3>Reproducible by one command</h3>
-        <p>Each pipeline is cache-first, so a full re-run costs nothing and needs no network. Fifty test cases across the six repositories check the accounting, the splits, and the statistics before any number is quoted here.</p>
+        <p>Each pipeline is cache-first, so a full re-run costs nothing and needs no network. Nearly a hundred test cases across the seven repositories check the accounting, the splits, and the statistics before any number is quoted here.</p>
       </div>
       <div class="method-cell" data-reveal>
         <h3>Designed, then seconded</h3>
@@ -349,7 +381,7 @@
 
   <section class="contact">
     <h2 class="section-title">The short version</h2>
-    <p class="contact-line">Two years inside Amazon Risk, a published IEEE paper, and six pipelines that report their own failures. The questions to ask are the ones in the writeups, because every answer in them was checked against the data before it was written.</p>
+    <p class="contact-line">Two years inside Amazon Risk, a published IEEE paper, and seven pipelines that report their own failures. The questions to ask are the ones in the writeups, because every answer in them was checked against the data before it was written.</p>
     <div class="contact-actions">
       <a class="btn-primary" data-magnetic href="mailto:vedantkondework@gmail.com">vedantkondework@gmail.com</a>
       <a class="btn-ghost" data-magnetic href="Vedant_Konde_CV_Final.docx" target="_blank" rel="noopener">Download CV</a>
