@@ -35,10 +35,18 @@ def style(ax, xgrid=False):
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
     ax.spines["left"].set_color(C["grid"]); ax.spines["bottom"].set_color(C["grid"])
+    ax.set_facecolor(C["canvas"])
     ax.grid(axis="y" if not xgrid else "x", color=C["grid"], lw=0.8, alpha=0.85)
     ax.set_axisbelow(True)
 
 def save(name, fig):
+    # Force theme-aware facecolor + tick colors on every axis (incl. colorbar).
+    # Without this the dark batch falls back to matplotlib defaults (white axes,
+    # black ticks) and the notations disappear against the dark card surface.
+    for ax in fig.axes:
+        ax.set_facecolor(C["canvas"])
+        for t in list(ax.get_xticklabels()) + list(ax.get_yticklabels()):
+            t.set_color(C["muted"])
     fig.tight_layout()
     base = Path(name).stem
     fig.savefig(OUT / (base + SFX + ".png"), facecolor=C["canvas"], bbox_inches="tight")
@@ -92,8 +100,10 @@ def chart_p3():
     for i in range(len(g.index)):
         for j in range(len(g.columns)):
             v = g.values[i, j] * 100
+            # cell text: white on the dark map cells, fixed dark ink on the light
+            # ones - the colormap is theme-independent, so this rule holds in both
             ax.text(j, i, f"{v:+.1f}", ha="center", va="center", fontsize=8.5,
-                    color="white" if abs(v) > 1.5 else C["ink"])
+                    color="white" if abs(v) > 1.5 else "#1d1d1f")
     ax.set_title("Year-1 EPS accretion % by entry multiple and synergy capture", fontsize=10, pad=10, loc="left")
     for s in ax.spines.values(): s.set_visible(False)
     ax.grid(False)
@@ -160,6 +170,7 @@ def run_batch(palette, suffix):
     global SFX
     C.clear(); C.update(palette)
     SFX = suffix
+    apply_rc(palette)   # set rcParams (text/axis colors) for this theme
     for f in (chart_p1, chart_p2, chart_p3, chart_p4, chart_p5, chart_p6):
         f()
         print(f"  [{palette is LIGHT and 'light' or 'dark'}] wrote", f.__name__ + suffix)

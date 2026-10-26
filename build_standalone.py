@@ -32,12 +32,12 @@ def embed(m):
 
 html = re.sub(r'src="img/([a-z0-9_-]+\.png)"', embed, html)
 
-# 4) embed the CV pdf as a base64 data URI so the download link works offline
-def embed_pdf(m):
-    b64 = base64.b64encode((HERE / "Vedant_Konde_Resume_MIM.pdf").read_bytes()).decode("ascii")
-    return f'href="data:application/pdf;base64,{b64}"'
+# 4) embed the CV docx as a base64 data URI so the download link works offline
+def embed_docx(m):
+    b64 = base64.b64encode((HERE / "Vedant_Konde_CV_Final.docx").read_bytes()).decode("ascii")
+    return f'href="data:application/vnd.openxmlformats-officedocument.wordprocessingml.document;base64,{b64}"'
 
-html = re.sub(r'href="Vedant_Konde_Resume_MIM\.pdf"', embed_pdf, html)
+html = re.sub(r'href="Vedant_Konde_CV_Final\.docx"', embed_docx, html)
 
 out = HERE / "index.standalone.html"
 out.write_text(html, encoding="utf-8")
