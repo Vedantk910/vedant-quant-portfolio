@@ -5,7 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vedant Konde. Quantitative finance, built to be defended.</title>
 <meta name="description" content="Six walk-forward quant and strategy projects: ML factor backtesting, GARCH VaR, M&A screening, NLP event studies, and deep forecasting. Every number is out-of-sample and reproducible.">
+<meta name="theme-color" content="#f5f5f7" id="themeColor">
+<meta property="og:title" content="Vedant Konde — Quantitative Finance Portfolio">
+<meta property="og:description" content="Six walk-forward quant and strategy projects, every number out-of-sample and reproducible.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a3132e'/%3E%3Ctext x='16' y='22' font-family='-apple-system,Helvetica,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EV.%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vedant Konde",
+  "jobTitle": "Quantitative Finance Researcher & Risk Specialist",
+  "email": "mailto:vedantkondework@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/vedant-konde",
+    "https://github.com/Vedantk910"
+  ],
+  "knowsAbout": ["machine learning", "quantitative finance", "risk management", "value at risk", "M&A analysis", "deep time-series forecasting"],
+  "worksFor": {"@type": "Organization", "name": "Amazon", "description": "Risk Specialist & Subject Matter Expert, 2024-2026"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "AISSMS College of Engineering, Pune"}
+}
+</script>
 </head>
 <body>
 
@@ -13,124 +34,270 @@
   <div class="header-inner">
     <a class="brand" href="#top">Vedant Konde<span class="brand-dot">.</span></a>
     <nav class="site-nav" aria-label="Sections">
+      <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#method">Method</a>
       <a href="#next">What is next</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color appearance">Light</button>
+    <div class="header-actions">
+      <a class="icon-link" href="https://www.linkedin.com/in/vedant-konde" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.067 2.067 0 1 1 0-4.13 2.067 2.067 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a class="icon-link" href="https://github.com/Vedantk910" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+      <button class="theme-toggle" id="themeToggle" type="button" data-magnetic aria-label="Switch color appearance">Light</button>
+    </div>
   </div>
 </header>
 
 <main>
 
   <section class="hero" id="work">
-    <p class="hero-kicker">Amazon Risk, two years. Six projects. One standard.</p>
-    <h1 class="hero-title">Built to be<br>defended in an interview.</h1>
-    <p class="hero-lede">Every project below was trained only on data it was allowed to see, scored out-of-sample, and priced with real friction. Where a model lost, the loss is reported. That is the point of the work.</p>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num" data-count="50">0</span><span class="stat-label">out-of-sample test cases</span></div>
-      <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">reproducible research pipelines</span></div>
-      <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">in-sample results reported</span></div>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <p class="hero-kicker">Amazon Risk, two years. Six projects. One standard.</p>
+        <h1 class="hero-title">Built to be<br>defended in an interview.</h1>
+        <p class="hero-lede">Every project below was trained only on data it was allowed to see, scored out-of-sample, and priced with real friction. Where a model lost, the loss is reported. That is the point of the work.</p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-count="50">0</span><span class="stat-label">out-of-sample test cases</span></div>
+          <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">reproducible research pipelines</span></div>
+          <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">in-sample results reported</span></div>
+        </div>
+      </div>
+      <aside class="hero-index" aria-label="Project index">
+        <span class="hero-index-label">Index</span>
+        <ol>
+          <li><a href="#work-0"><span class="ix-no">01</span><span class="ix-name">Walk-forward factor backtest</span><span class="ix-metric">Sharpe 1.34</span></a></li>
+          <li><a href="#work-1"><span class="ix-no">02</span><span class="ix-name">VaR desk</span><span class="ix-metric">Kupiec p 0.53</span></a></li>
+          <li><a href="#work-2"><span class="ix-no">03</span><span class="ix-name">M&amp;A screening</span><span class="ix-metric">+3.2% EPS</span></a></li>
+          <li><a href="#work-3"><span class="ix-no">04</span><span class="ix-name">Earnings calls as data</span><span class="ix-metric">&beta; 0.055</span></a></li>
+          <li><a href="#work-4"><span class="ix-no">05</span><span class="ix-name">DXY forecasting</span><span class="ix-metric">MAE 0.0099</span></a></li>
+          <li><a href="#work-5"><span class="ix-no">06</span><span class="ix-name">Capstone factor note</span><span class="ix-metric">MDD 11.4%</span></a></li>
+        </ol>
+        <a class="btn-primary" data-magnetic href="#work-0">See the work</a>
+      </aside>
     </div>
-    <a class="btn-primary" href="#work-0">See the work</a>
   </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About</h2>
+    <p class="section-lede">Computer engineer, two years inside Amazon Risk, one IEEE publication. The common thread: systems where the number is checkable and the loss is admitted.</p>
+    <div class="about-grid">
+
+      <div class="about-panel" data-reveal data-tilt data-tilt-max="5">
+        <h3 class="about-panel-title">Experience</h3>
+        <ul class="about-list">
+          <li><strong>Amazon, Risk Specialist &amp; SME, 2024–2026.</strong> 67,000+ fraud cases resolved; top 5% of the team on productivity and accuracy; promoted from Risk Investigator after one year. Performer of the Month three times (Nov 2025, Dec 2025, Jan 2026). Redesigned Buyer Risk Prevention workflows, a 15% efficiency gain.</li>
+          <li><strong>Smartedge Solutions, Research Associate.</strong> 20+ operational improvement opportunities identified; supported a 30% efficiency gain.</li>
+        </ul>
+      </div>
+
+      <div class="about-panel" data-reveal data-tilt data-tilt-max="5">
+        <h3 class="about-panel-title">Outside finance</h3>
+        <ul class="about-list">
+          <li><strong>Gambit Chess Club, founder, 2026–present.</strong> 4 cities, 30+ events, ₹3.45 lakh gross revenue, 10,000+ members, 25+ venue partnerships. 40% ticket-yield premium in Pune; ~49% gross contribution margin on an asset-light model.</li>
+          <li><strong>Niv Manch, founder, 2026–present.</strong> Free AI literacy: 350+ rural students across three seminars, 15+ teachers trained, 120+ at the MIT-WPU workshop.</li>
+          <li><strong>IEEE TKD-24.</strong> CNN dental-cavity detection, coauthored; 3rd in department, oral presentation at a national conference.</li>
+          <li><strong>SIH 2023.</strong> Khetirental, a location-based equipment-rental platform for farmers; 2nd in the Computer Engineering department.</li>
+        </ul>
+      </div>
+
+      <div class="about-panel" data-reveal data-tilt data-tilt-max="5">
+        <h3 class="about-panel-title">Certifications</h3>
+        <ul class="about-list">
+          <li><strong>AWS Certified Machine Learning Engineer, Associate</strong> (MLA-C01, Jun 2026)</li>
+          <li><strong>AWS Certified Data Engineer, Associate</strong> (DEA-C01, Jun 2026)</li>
+          <li><strong>Google AI Professional Certificate</strong> (Apr 2026)</li>
+          <li><strong>IBM Python for Data Science, AI &amp; Development</strong> (Jul 2024)</li>
+          <li><strong>Business Foundations, University of Pennsylvania</strong> (Oct 2026)</li>
+        </ul>
+      </div>
+
+      <div class="about-panel" data-reveal data-tilt data-tilt-max="5">
+        <h3 class="about-panel-title">Toolkit</h3>
+        <ul class="about-list">
+          <li><strong>Python:</strong> NumPy, pandas, SciPy, statsmodels, PyTorch, LightGBM, arch</li>
+          <li><strong>Data &amp; systems:</strong> SQL / PostgreSQL, AWS, React, Spring Boot, VPS deployment</li>
+          <li><strong>Education:</strong> B.E. Computer Engineering, AISSMS Pune, First Class with Distinction, 8.5/10</li>
+          <li><strong>Languages:</strong> Hindi &amp; Marathi (native), English (fluent), Japanese (basic)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <p class="work-overline"><span>The work</span><i></i><span>out-of-sample throughout</span></p>
 
   <section class="bento" aria-label="Projects">
 
     <!-- P1 hero card -->
-    <article class="card card-hero" id="work-0" data-reveal>
+    <article class="card card-hero" id="work-0" data-reveal data-tilt data-tilt-max="7">
+      <span class="card-no">01</span>
       <div class="card-head">
         <h2 class="card-title">Walk-forward factor backtest</h2>
         <p class="card-usecase">Does a machine-learned equity signal survive real costs and honest scoring?</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/quant-ml-factor-backtest" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">1.34</span><span class="stat-caps">out-of-sample Sharpe, the linear baseline. Random forest and gradient boosting both lost to it on a 24-ticker panel once friction is priced in.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">Rank 24 US mega-caps by predicted one-month return, long the top 8, rebalance quarterly at 10 bps. FRED macro overlay (Fed funds, VIX, unemployment, yield curve).</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">Python, scikit-learn, LightGBM, pandas, yfinance, FRED</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">1.5 weeks, end to end. 16 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">With a small cross-section, model depth is a liability, not an asset. The walk-forward split is what exposes it, not the in-sample fit.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">GARCH conditional vol from project 2 replaces the rolling-vol feature; sector-neutral caps on a wider MSCI universe.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-0">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-0">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Find out whether a learned equity signal survives real costs and honest out-of-sample scoring, not just a good-looking in-sample fit.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">Ranked 24 US mega-caps by predicted one-month return, long the top 8, quarterly rebalance at 10 bps. Trained walk-forward, on data before each target year only, with a FRED macro overlay, and priced every trade.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>Python, scikit-learn, LightGBM, pandas, yfinance, FRED.</strong> 24-ticker panel, 2017-2024. 16 tests. About 1.5 weeks.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">OOS Sharpe 1.34 for the linear baseline; random forest and gradient boosting both lost to it. A sector-neutral cap lifted LightGBM IR to 0.56.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">This is the thesis of the whole portfolio. With a small cross-section, model depth is a liability, and the walk-forward split is the tool that exposes it.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">Walk-forward evaluation and cost-aware backtesting. Reading a loss as a result, not a bug to delete.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p1_sharpe.png" alt="Out-of-sample Sharpe by model and allocation" loading="lazy">
+        <img class="fig-dark" src="img/p1_sharpe-dark.png" alt="Out-of-sample Sharpe by model and allocation" loading="lazy">
+        <figcaption>Out-of-sample Sharpe by model and allocation. The dashed line is the equal-weight hurdle the strategy must clear to claim alpha.</figcaption>
+      </figure>
     </article>
 
     <!-- P2 wide card -->
-    <article class="card card-wide" id="work-1" data-reveal>
+    <article class="card card-wide" id="work-1" data-reveal data-tilt data-tilt-max="5">
+      <span class="card-no">02</span>
       <div class="card-head">
         <h2 class="card-title">A VaR desk that admits its errors</h2>
         <p class="card-usecase">Can a one-day 99% Value-at-Risk actually hold up against ten years of daily equity data?</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/garch-var-desk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">0.994</span><span class="stat-caps">SPY GARCH persistence. The 99% VaR recorded 7 violations in 552 days (1.27% against a 1% target), and the Kupiec test failed to reject correct coverage at p = 0.53.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">Risk budgeting: GARCH(1,1)-t and EGARCH vol forecasting, coverage backtests, and a 15% vol-target overlay tested against a static 50/50.</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">arch, scipy, pandas, FRED risk-free series</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">3 weeks. 9 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">Vol-targeting cuts drawdowns but trades Sharpe for them. The overlay is a return amplifier, and the desk note says so instead of pretending otherwise.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">Feed the GARCH vol series into the momentum factor as the regime signal, replacing the VIX level used in project 6.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-1">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-1">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Build a Value-at-Risk desk whose coverage can be tested against a decade of daily returns, not just asserted on paper.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">GARCH(1,1)-t and EGARCH volatility forecasting on SPY, Kupiec and Christoffersen coverage backtests on the 99% VaR, then a 15% vol-target overlay against a static 50/50 benchmark.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>arch, scipy, pandas, FRED risk-free series.</strong> 2015-2026 daily equity data. 9 tests. About 3 weeks.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">GARCH persistence 0.994; 7 of 552 VaR violations against a 1% target, Kupiec p = 0.53. The vol-target cut max drawdown to 11.4% but traded Sharpe for it.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">It closes the "have you modeled market data?" gap every target school probes, and it is the natural next layer for the capstone's regime signal.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">GARCH MLE and VaR coverage backtesting. Telling a risk tool from a return amplifier, out loud.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p2_vartarget.png" alt="Vol-target versus static 50/50 Sharpe and drawdown" loading="lazy">
+        <img class="fig-dark" src="img/p2_vartarget-dark.png" alt="Vol-target versus static 50/50 Sharpe and drawdown" loading="lazy">
+        <figcaption>Vol-target versus a static 50/50: annualised Sharpe on the left, max drawdown on the right.</figcaption>
+      </figure>
     </article>
 
     <!-- P3 square -->
-    <article class="card card-square" id="work-2" data-reveal>
+    <article class="card card-square" id="work-2" data-reveal data-tilt data-tilt-max="6">
+      <span class="card-no">03</span>
       <div class="card-head">
         <h2 class="card-title">M&amp;A screening, told like a case file</h2>
         <p class="card-usecase">Which public acquisitions were actually accretive, and at what price?</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/ma-case-file" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">+3.2%</span><span class="stat-caps">first-year EPS accretion at a 6x entry multiple with full synergy capture. Above roughly 9x, every deal in the set is dilutive in year one.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">Twelve real e-commerce and logistics deals screened across entry-multiple and synergy-capture grids, with a roll-up IRR matrix.</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">Python, SEC EDGAR, statsmodels</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">2 weeks. 9 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">Synergy capture is worth up to two points of EPS, but the entry multiple still dominates. The break-even maths is what a client pays for.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">Deal-level fundamentals from XBRL tags instead of press-release numbers.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-2">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-2">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Screen real public acquisitions for first-year EPS accretion and find the entry price at which the maths stops working.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">Twelve e-commerce and logistics deals swept across entry-multiple and synergy-capture grids, a DCF discount-rate sensitivity band, and a roll-up IRR matrix.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>Python, SEC EDGAR, statsmodels.</strong> 12 public deals, 2015-2025. 9 tests. About 2 weeks.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">+3.2% year-1 EPS at a 6x entry with full synergy capture. Above roughly 9x every deal in the set is dilutive, and synergy is worth up to two EPS points.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">The break-even maths is the part a client pays for. It is the MBB and St. Gallen weapon on the target list.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">EPS accretion and dilution modelling. Turning a grid of numbers into a one-page case file a partner would screenshot.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p3_accretion.png" alt="EPS accretion by entry multiple and synergy capture" loading="lazy">
+        <img class="fig-dark" src="img/p3_accretion-dark.png" alt="EPS accretion by entry multiple and synergy capture" loading="lazy">
+        <figcaption>Year-1 EPS accretion percent across entry multiple and synergy capture. Red is dilutive; the break-even band sits near 9x.</figcaption>
+      </figure>
     </article>
 
     <!-- P5 square -->
-    <article class="card card-square" id="work-3" data-reveal>
+    <article class="card card-square" id="work-3" data-reveal data-tilt data-tilt-max="6">
+      <span class="card-no">04</span>
       <div class="card-head">
         <h2 class="card-title">Earnings calls, read as data</h2>
         <p class="card-usecase">Does the language of an earnings release move the stock after the print?</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/earnings-call-nlp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">0.055</span><span class="stat-caps">abnormal return per dollar of earnings surprise, significant at the 5% level across 160 events. Tone, on its own, did not reach significance, and the paper says why.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">160 firm-quarter events, 10 firms: EDGAR release text, deterministic tone and uncertainty scoring, market-model abnormal returns, Newey-West regression with firm fixed effects.</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">SEC EDGAR, statsmodels HAC inference, yfinance</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">3 weeks, run in parallel with project 3. 5 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">A word list has real limits: it detects surprise, not sentiment. The documented boundary is the finding; the LLM upgrade is the stated next step.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">LLM-scored uncertainty on the same 160-event panel, posted as a working paper.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-3">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-3">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Test whether the language of an earnings release moves the stock after the print, using a defensible event-study design rather than a vibes check.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">160 firm-quarter events across 10 firms: SEC EDGAR release text, deterministic tone and uncertainty scoring, market-model abnormal returns, then a Newey-West HAC regression with firm fixed effects.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>SEC EDGAR, statsmodels HAC inference, yfinance.</strong> 160 events, 10 firms. 5 tests. About 3 weeks, run in parallel with project 3.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">Earnings surprise is the significant driver of post-announcement drift; lexicon sentiment and uncertainty do not reach significance at this sample size, and the paper says so.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">The ML-by-finance differentiator on this list. Stating the limit of a word-list scorer honestly is itself the finding, and the LLM upgrade is the documented next step.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">Event-study design and HAC inference. Knowing where a cheap scorer stops being enough.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p5_forest.png" alt="Regression coefficient forest plot" loading="lazy">
+        <img class="fig-dark" src="img/p5_forest-dark.png" alt="Regression coefficient forest plot" loading="lazy">
+        <figcaption>Newey-West coefficient forest. Surprise clears zero (significant); sentiment and uncertainty do not, at 160 events.</figcaption>
+      </figure>
     </article>
 
     <!-- P4 wide -->
-    <article class="card card-wide" id="work-4" data-reveal>
+    <article class="card card-wide" id="work-4" data-reveal data-tilt data-tilt-max="5">
+      <span class="card-no">05</span>
       <div class="card-head">
         <h2 class="card-title">Forecasting the dollar, honestly</h2>
         <p class="card-usecase">Where does a transformer actually beat the boring baselines?</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/patchtst-forecast" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">h=5 / h=10</span><span class="stat-caps">PatchTST wins the five-step horizon at 0.0099 MAE; classical LightGBM takes the ten-step. The crossover is where the model choice should change, and the ablation table marks it.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">Monthly DXY returns, walk-forward split at May 2024: a patched transformer trained with early stopping against ETS, recursive LightGBM, and the random walk, with a PSI drift monitor wired in.</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">PyTorch (scaled dot-product attention), statsmodels, LightGBM, FRED</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">2 weeks. 6 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">Depth buys accuracy only on short horizons; the data does not carry more structure than that. Choosing by horizon, not by default, is the whole lesson.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">Multi-asset FX with drift monitoring triggering automated retraining.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-4">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-4">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Find where a transformer actually beats the boring forecasting baselines, and mark the horizon where the answer flips.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">Monthly DXY returns with a walk-forward split at May 2024: a patched transformer trained with early stopping against ETS, recursive LightGBM, and the random walk, at horizons 5 and 10, with a PSI drift monitor wired in.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>PyTorch (scaled dot-product attention), statsmodels, LightGBM, FRED.</strong> DXY monthly series. 6 tests. About 2 weeks.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">PatchTST wins the five-step horizon at 0.0099 MAE; classical LightGBM takes the ten-step. The crossover is where the model choice should change.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">The ML-by-ML track on the target list. Choosing by horizon rather than by default is the whole lesson, and the ablation table marks the crossover.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">Deep time-series forecasting with deterministic training and drift monitoring. Knowing when depth does not pay.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p4_ablation.png" alt="Forecast error by model and horizon" loading="lazy">
+        <img class="fig-dark" src="img/p4_ablation-dark.png" alt="Forecast error by model and horizon" loading="lazy">
+        <figcaption>Forecast error (MAE) by model and horizon. Lower is better; the crossover between the two bars is the model-choice boundary.</figcaption>
+      </figure>
     </article>
 
     <!-- P6 capstone -->
-    <article class="card card-wide" id="work-5" data-reveal>
+    <article class="card card-wide" id="work-5" data-reveal data-tilt data-tilt-max="5">
+      <span class="card-no">06</span>
+      <span class="card-chip">Capstone</span>
       <div class="card-head">
         <h2 class="card-title">The capstone: one factor, three layers</h2>
         <p class="card-usecase">Momentum, a vol-regime de-lever, and an earnings overlay, tied into one defensible research note.</p>
+        <a class="card-repo" href="https://github.com/Vedantk910/alpha-report" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18.91-.26 1.88-.38 2.86-.38.98 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.77 1.05.77 2.12 0 1.53-.01 2.78-.01 3.16 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Open repo</a>
       </div>
       <p class="card-stat"><span class="stat-big">16.3% &rarr; 11.4%</span><span class="stat-caps">max drawdown cut by the vol-regime de-lever, Sharpe up from 0.22 to 0.24. The earnings overlay from project 5 made it worse as a monthly filter, 0.22 to 0.21, and the note keeps that result in the text.</span></p>
-      <div class="card-grid">
-        <div class="kv"><span class="k">Use case</span><span class="v">A 12/1 momentum factor on 24 mega-caps, 2019 to 2025: 25 bps friction, VIX-regime exposure control, and a surprise-based entry screen, written up PMO-style.</span></div>
-        <div class="kv"><span class="k">Stack</span><span class="v">Custom backtest engine, FRED VIX, project-5 surprise data</span></div>
-        <div class="kv"><span class="k">Effort</span><span class="v">2 weeks on top of the earlier projects. 5 tests.</span></div>
-        <div class="kv"><span class="k">Learned</span><span class="v">An overlay that helps at quarterly horizons can lose at monthly ones. The note separates the signal from the timing, which is the difference between marketing a strategy and publishing one.</span></div>
-        <div class="kv"><span class="k">Next</span><span class="v">Swap the VIX regime flag for the GARCH conditional vol from project 2, and re-test the overlay at the quarter.</span></div>
+      <button class="fold-toggle" type="button" aria-expanded="false" aria-controls="detail-5">Breakdown<span class="fold-caret" aria-hidden="true"></span></button>
+      <div class="card-fold" id="detail-5">
+      <div class="card-detail">
+        <div class="field"><span class="field-k">Aim</span><span class="field-v">Tie the earlier projects into one defensible strategy: a momentum factor, a vol-regime de-lever, and an earnings overlay, priced end to end.</span></div>
+        <div class="field"><span class="field-k">How I did it</span><span class="field-v">A 12/1 momentum factor on 24 mega-caps from 2019 to 2025, at 25 bps friction, with a VIX-regime exposure control and the project-5 surprise screen as an entry filter, written up in the style of a hedge-fund PMO note.</span></div>
+        <div class="field"><span class="field-k">Resources</span><span class="field-v"><strong>Custom backtest engine, FRED VIX, project-5 surprise data.</strong> 24-name panel, 2019-2025. 5 tests. About 2 weeks on top of the earlier projects.</span></div>
+        <div class="field"><span class="field-k">Findings</span><span class="field-v">The vol-regime de-lever lifts Sharpe from 0.22 to 0.24 and cuts max drawdown from 16.3% to 11.4%. The earnings overlay made it worse as a monthly filter, and the note keeps that result.</span></div>
+        <div class="field"><span class="field-k">Why it matters</span><span class="field-v">It is the piece you hand a quant interviewer instead of describing code. It separates signal from timing, which is the difference between marketing a strategy and publishing one.</span></div>
+        <div class="field"><span class="field-k">Skill learned</span><span class="field-v">Multi-layer strategy construction and honest overlay attribution. Re-testing the overlay quarterly, where it may actually help.</span></div>
       </div>
+      </div>
+      <figure class="card-figure">
+        <span class="fig-tag">Output</span>
+        <img class="fig-light" src="img/p6_variants.png" alt="Sharpe across strategy variants" loading="lazy">
+        <img class="fig-dark" src="img/p6_variants-dark.png" alt="Sharpe across strategy variants" loading="lazy">
+        <figcaption>Sharpe across the three variants. The vol de-lever is the only overlay that helps; the surprise overlay does not, and the note says so.</figcaption>
+      </figure>
     </article>
 
   </section>
@@ -171,9 +338,13 @@
     <h2 class="section-title">The short version</h2>
     <p class="contact-line">Two years inside Amazon Risk, a published IEEE paper, and six pipelines that report their own failures. The questions to ask are the ones in the writeups, because every answer in them was checked against the data before it was written.</p>
     <div class="contact-actions">
-      <a class="btn-primary" href="mailto:vedantkondework@gmail.com">vedantkondework@gmail.com</a>
-      <a class="btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn-primary" data-magnetic href="mailto:vedantkondework@gmail.com">vedantkondework@gmail.com</a>
+      <a class="btn-ghost" data-magnetic href="Vedant_Konde_Resume_MIM.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn-ghost" data-magnetic href="https://www.linkedin.com/in/vedant-konde" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn-ghost" data-magnetic href="https://github.com/Vedantk910" target="_blank" rel="noopener">GitHub</a>
+      <button class="btn-ghost copy-email" data-magnetic type="button" data-copy="vedantkondework@gmail.com">Copy email</button>
     </div>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">&#8593;</button>
   </section>
 
 </main>
